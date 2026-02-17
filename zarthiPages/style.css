@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    
+}
+.wrapper{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.template{
+    width: 100vw;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 8%;
+    gap: 10%;
+    background-color: #f9f9f9;
+}
+
+.relationships{
+    background-color: #ffffff;
+}
+
+
+.content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .heading{
+        font-weight: 900;
+        font-size: 3rem;
+    }
+    .firstP{
+        font-size: 1.6rem;
+        font-weight: 600; 
+
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+        .capitalize{
+            text-transform: uppercase;
+            color: black;
+        }   
+    }
+
+    .faded{
+        color: #6c6969;
+    }
+
+    .paras{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem
+        
+    }
+}
+
+
+
+.image{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    img{
+        width: 100%;
+    }
+    
+}
+
+.relationshipsContainer{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+
+    .card{
+        width: 30%;
+        height: 100px;
+        border: 2px solid #b7b3b3;
+        box-shadow: 4px 4px 5px#b7b3b3;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        font-size: 14px;
+    }
+    
+    .heading{
+        font-weight: 800;
+        font-size: 1rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        .content{
+            width: 100%;
+        }
+        .image{
+            width: 100%;
+        }
+ 
+    }
+
+    .vision{
+        text-align: center;
+    }
+
+ 
+
+    .relationships{
+        flex-direction: column-reverse;
+    }
+    .relationshipsContainer{
+        flex-direction: row-reverse;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 10px;
+        .card{
+            width: 100%;
+            padding: 1rem;
+        }
+    
+    }
+    .paras{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .orange{
+        color: orange;
+    
+    }
+}
