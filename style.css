@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+}
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+.ourVisionContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5rem 5rem 7rem ;
+    background-color: #f4f4f480;
+}
+.ourVisionContainer .content {
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 35%;
+    display: flex;
+}
+.ourVision-HeadText {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+}
+.ourVision-HeadText span {
+    color: #262626;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+.common-heading{
+    gap: .75rem;
+    display: flex;
+}
+.common-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.ourVisionContainer p {
+    color: #6c6969;
+    font-size: 1.12rem;
+    font-weight: 400;
+}
+.ourVisionContainer .imageParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+.ourVisionContainer .imageParent img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.ourRelationshipContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 6rem;
+}
+.ourRelationshipContainer .realtionshipcontainer-tabView{
+    display: none;
+}
+.ourRelationshipContainer .ourRelationshipImage {
+    width: 46.85%;
+    padding: 7.625rem 0 2rem;
+}
+.ourRelationshipContainer .ourRelationshipImage img{
+    width: 100%;
+
+}
+.ourRelationshipContainer .relatioshipContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 43%;
+}
+.ourRelationshipContainer .relatioshipContainer .relationship-texts {
+    flex-direction: column;
+    gap: 1.5rem;
+    display: flex;
+}
+.ourRelationshipContainer .relatioshipContainer .relationship-texts  span{
+    color: #6c6969;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+.ourRelationshipContainer .relatioshipContainer .relationship-texts .textContent span.text-heading {
+    text-transform: uppercase;
+    color: #262626;
+    font-weight: 700;
+}
+.ourRelationshipContainer .relatioshipContainer .cards {
+    justify-content: start;
+    gap: 1.875rem;
+    display: flex;
+}
+
+.ourRelationshipContainer .relatioshipContainer .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11rem;
+    height: 7rem;
+    border: 2px solid #c0c0c0;
+    box-shadow: 4px 4px 5px #ededed;
+    border-radius: 10px;
+}
+.cards .card span {
+    color: #262626;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.1rem;
+}
+
+
+
+
+@media screen and (max-width:1023px) {
+    .ourVisionContainer{
+        flex-direction: column;
+        gap: 5rem;
+        padding: 2.5rem 4rem 4rem;
+    }
+    .ourVisionContainer .content{
+        justify-content: center;
+        gap: 3.1rem;
+        width: 100%;
+    }
+    .ourVision-HeadText{
+        align-items: center;
+        gap: .6rem;
+    }
+    .ourVisionContainer .content p{
+        text-align: center;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .ourVisionContainer .imageParent{
+        width: 90%;
+    }
+    .ourVisionContainer .imageParent img{
+        width: 100%;
+    }
+
+    .ourRelationshipContainer{
+        flex-direction: column;
+        padding: 4rem 3.133rem 0;
+;
+    }
+
+    .ourRelationshipContainer .realtionshipcontainer-tabView{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+
+        .relationship-text{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+
+            .relationship-para{
+                display: flex;
+                align-items: baseline;
+                gap: 2.7rem;
+                width: 100%;
+
+                .tabViewCard{
+                    width: 20%;
+                    height: 7.5rem;
+                    border: 2px solid #c0c0c0;
+                    box-shadow: 4px 4px 5px #ededed;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap:0.4rem;
+                    .bold{
+                        color: #262626;
+                        font-size: 1.733rem;
+                        font-weight: 800;
+                        line-height: 2.2rem;
+                    }
+                    .fade{
+                        color: #6c6969;
+                        font-size: 1.33rem;
+                        font-weight: 600;
+                        line-height: 1.667rem;
+                    }
+                }
+
+                .tabViewPara{
+                    width: 70%;
+                    color: #6c6969;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    line-height: 1.667rem;
+
+                    .text-heading{
+                        text-transform: uppercase;
+                        color: #262626;
+                        font-weight: 700;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .ourRelationshipContainer .laptopView{
+        display: none;
+    }
+
+    .ourRelationshipContainer .realtionshipcontainer-tabView .heading{
+        display: flex;
+        gap: .5rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        .orange{
+            color: orange;
+        }
+        h2{
+            font-size: 2.7rem;
+            font-weight: 800;
+        }
+    }
+
+    .ourRelationshipContainer .ourRelationshipImage{
+        width: 100%;
+        padding: 0 6rem;
+    }
+    .ourRelationshipContainer .ourRelationshipImage img{
+        width: 100%;
+    }
+   
+
+}
+
+@media screen and (max-width: 480px) {
+   
+    .ourVisionContainer {
+        padding-top: 2.6rem;
+        gap: 1.5rem;
+        padding-inline: 1.5rem;
+    }
+    .ourVisionContainer .content{
+        gap: 1.5rem;
+    }
+    .ourVisionContainer .content .ourVision-HeadText{
+        align-items: center;
+        gap: .6rem;
+    } 
+    .ourVisionContainer .content .ourVision-HeadText .common-heading{
+        justify-content: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .common-heading h2{
+        justify-content: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .ourVision-HeadText span{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .ourVisionContainer .content p {
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+    .ourVisionContainer .imageParent {
+        width: 95%;
+    }
+    .ourVisionContainer .imageParent img {
+    object-fit: cover;
+    width: 100%;
+    }
+
+    .ourRelationshipContainer{
+        padding: 1rem 1rem;
+    }
+    .ourRelationshipContainer .realtionshipcontainer-tabView .heading h2{
+        font-size: 1.5rem;
+    }
+    .ourRelationshipContainer .realtionshipcontainer-tabView .relationship-text{
+        width: 100%;
+        /* height: 50vh; */
+    }
+    .ourRelationshipContainer .realtionshipcontainer-tabView .relationship-text .relationship-para{
+        gap: .8rem;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        span{
+            font-size: 1rem;
+        }
+    }
+    .ourRelationshipContainer .realtionshipcontainer-tabView .relationship-text .relationship-para .tabViewCard{
+        width: 28%;
+        height: 5.7rem;
+        gap: 2px;
+    }
+    .ourRelationshipContainer .realtionshipcontainer-tabView .relationship-text .relationship-para .tabViewCard .bold{
+        font-size: 1.2rem;
+    } 
+    .ourRelationshipContainer .realtionshipcontainer-tabView .relationship-text .relationship-para .tabViewCard .fade{
+        font-size: 1rem;
+    }  
+    .ourRelationshipContainer .ourRelationshipImage{
+        padding: 0px;
+        width: 100%;
+        /* height: 40vh; */
+        img{
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+
+}
+/* 
+.ourVisionContainer .content{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center ;
+}
+.ourVisionContainer .image{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourVisionContainer .image img{
+    width: 95%;
+}
+
+.common-heading{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.ourVisionContainer .content .firstP{
+    font-size: 1.4rem;
+    font-weight: 700; 
+}
+
+.ourVisionContainer .content p{
+    font-size: 1.1rem;
+    line-height: 1.4rem; 
+}
+.ourVisionContainer .content .faded{
+    color: #6c6969;
+}
+
+
+.ourRelationshipContainer{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 0% 8%;
+    background-color: #ffffff;
+}
+
+.ourRelationshipContainer .image{
+    width: 50%;
+}
+.ourRelationshipContainer .image img{
+    width:100%;
+}
+
+.ourRelationshipContainer .content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;;
+}
+
+.ourRelationshipContainer .content{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    
+    .firstP{
+        font-size: 1.5rem;
+        font-weight: 600; 
+
+    }
+    p{
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+
+        .capitalize{
+            text-transform: uppercase;
+            color: black;
+        }   
+    }
+
+    
+
+    .paras{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem
+        
+    }
+}
+
+ .cards{
+    display: flex;
+    justify-content: space-between;
+
+    .card{
+        width: 30%;
+        height: 100px;
+        border: 2px solid #b7b3b3;
+        box-shadow: 4px 4px 5px#b7b3b3;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+ */
+/* 
+
+
+
+.relationships{
+    background-color: #ffffff;
+}
+
+
+.content{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .heading{
+        font-weight: 800;
+        font-size: 3rem;
+    }
+    .firstP{
+        font-size: 1.5rem;
+        font-weight: 600; 
+
+    }
+    p{
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+
+        .capitalize{
+            text-transform: uppercase;
+            color: black;
+        }   
+    }
+
+    
+
+    .paras{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem
+        
+    }
+}
+
+
+
+.image{
+    width:55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    img{
+        width: 100%;
+    }
+    
+}
+
+.relationshipsContainer{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+
+    .card{
+        width: 30%;
+        height: 100px;
+        border: 2px solid #b7b3b3;
+        box-shadow: 4px 4px 5px#b7b3b3;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        font-size: 14px;
+    }
+    
+    .heading{
+        font-weight: 800;
+        font-size: 1rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        .content{
+            width: 100%;
+        }
+        .image{
+            width: 100%;
+        }
+ 
+    }
+
+    .vision{
+        text-align: center;
+    }
+
+ 
+
+    .relationships{
+        flex-direction: column-reverse;
+    }
+    .relationshipsContainer{
+        flex-direction: row-reverse;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 10px;
+        .card{
+            width: 100%;
+            padding: 1rem;
+        }
+    
+    }
+    .paras{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .orange{
+        color: orange;
+    
+    }
+} */
